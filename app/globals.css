@@ -16,12 +16,18 @@
   }
 }
 
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+
+
+.image{
+  aspect-ratio: 3/3;
+  
+  
+}
+.sliding-con::-webkit-scrollbar {
+  background-color: gray;
+}
+
+.sliding-con::-webkit-scrollbar-thumb {
+  background: #EF4444; 
+  border-radius: 10px;
+}

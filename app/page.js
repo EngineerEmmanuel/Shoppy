@@ -1,13 +1,13 @@
-import CartSection from '@/Components/CartSection'
-import HeroSection from '@/Components/HeroSection'
-import Products from '@/Components/Products'
+"use client"
+
+
+import HomePage from "../app/Home/page";
 
 
 export default function Home() {
   return (
-    <main className="">
-      <HeroSection/>
-      <Products/>
+    <main>
+      <HomePage/>
       {/* <CartSection/> */}
     </main>
   )

@@ -2,10 +2,13 @@
 
 import './globals.css'
 import { Inter } from 'next/font/google'
-import {store} from "../app/store";
+import store from "../app/store";
+import Navigation from '@/Components/Navigation'
+import Footer from '@/Components/Footer'
 
 // import {st}
 import { Provider } from 'react-redux';
+// import Provider from "../Features/Provider"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -20,7 +23,9 @@ export default function RootLayout({ children }) {
       
       <body className={inter.className}>
       <Provider store={store}>
+        <Navigation/>
         {children}
+        <Footer/>
         </Provider>
         </body>
       
